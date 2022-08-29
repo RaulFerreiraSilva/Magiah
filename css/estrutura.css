@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Cormorant+Garamond:wght@300&family=Cormorant:wght@300&family=Great+Vibes&family=Inter:wght@200&family=Quicksand:wght@300&family=Rubik:wght@900&display=swap');
+:root {
+    --verde: #2d4233;
+    --laranja: #c36c4f;
+    --preto: #2f2e2e;
+    --braco: #ebe6e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background: var(--preto);
+}
+
+/* Trabalhando com a parte dos contatos fixo top*/
+
+.logos-top {
+    height: 1.5em;
+    width: 1.5em;
+    text-decoration: none;
+}
+
+.contato-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0 0 0;
+    background-color: var(--laranja);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .sumir {
+        display: none;
+    }
+
+    .logos-top {
+        height: 1em;
+        width: 1em;
+    }
+    .contato-top {
+    font-size: .9rem;
+}
+
+}
+
+/* Fim da parte dos contatos fixo top */
+
+/*trabalhando no header */
+
+/* Trabalhando com a NavBar */
+nav{
+    background-color: var(--preto);
+    height: 10vh;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar-magiah {
+    display: flex;
+    justify-content: end;
+    margin: 0 70px 0 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-magiah a {
+    color: var(--braco);
+}
+
+.logo-magiah {
+    margin: 0 0 0 70px;
+}
+
+.logo-magiah a {
+    color: var(--braco);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.img-magiah {
+    height: 3em;
+    width: 3em;
+    margin: 0 5px 0 0;
+}
+
+.contato {
+    border-radius: 25px;
+    background-color: var(--laranja);
+    text-align: center;
+}
+
+
+@media (max-width: 991px) {
+    .navbar-magiah {
+        border-radius: 20px;
+        height: 200px;
+        padding: 0 50px 0 50px;
+        display: flex;
+        justify-content: start;
+        margin: 0 0 0 35px;
+        background-color: var(--preto);
+    }
+    .logo-magiah {
+        margin: 0 0 0 0;
+    }
+
+    .contato {
+        margin: 0 0 0 -30px;
+    }
+}
+
+/* fim da nav*/
+
+/* trabalhando na imagem */
+
+.img-info {
+    height: 90vh;
+    width: 100%;  
+}
+
+.pelicula{
+    background-color: var(--preto);
+    /*background: linear-gradient(180deg, rgba(0,0,0,0) 9.75%, #000 100%);*/
+}
+
+.content{
+    position: relative;
+}
+
+.legenda{
+    position: absolute;
+    left: 80px;
+    bottom: 30vh;
+    color: var(--braco);
+}
+
+.legenda h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+}
+
+.legenda h3{
+    font-family: 'Amiri', serif;
+    font-size: 1.2rem;
+}
+
+.legenda a{
+    background-color: var(--verde);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--braco);
+    margin: 0 50px 0 0;  
+}
+
+.legenda .diferente{
+    background-color: var(--laranja);
+}
+
+.legenda a:hover{
+    color: var(--preto);
+}
+
+.img-info-ladinho{
+    position: absolute;
+    height: 175px;
+    width: 100px;
+}
+
+.info-1{
+    left: 118vh;
+    bottom: 40vh;
+    /*background: var(--preto);*/
+    /*box-shadow: 10px -16px var(--preto);*/
+}
+
+.info-2{
+    left: 135vh;
+    bottom: 33vh;
+}
+
+.info-3{
+    left: 118vh;
+    bottom: 16vh;
+}
+
+.info-4{
+    left: 135vh;
+    bottom: 9vh;
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+@media(max-width: 990px){
+    .img-info-ladinho{
+        display: none;
+    }
+
+    .img-info {
+        height: 65vh;
+        width: 100%;  
+    }
+
+    .legenda{
+        position: absolute;
+        left: 50px;
+        bottom: 30vh;
+        color: var(--braco);
+    }
+    
+    .legenda h2{
+        font-family: 'Great Vibes', cursive;
+        font-size: 2.5rem;
+    }
+    
+    .legenda h3{
+        font-family: 'Amiri', serif;
+        font-size: 1rem;
+    }
+
+    .legenda a{
+        background-color: var(--verde);
+        border-radius: 10px;
+        padding: 10px;
+        text-decoration: none;
+        color: var(--braco);
+        margin: 0 25px 0 0;  
+        font-size: .75rem;   
+    } 
+}
+
+/* fim imagem */
+
+/* inicio do main */
+
+.titulo-main{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.text-titulo-main{
+    color: var(--braco);
+    font-family: 'Cormorant', sans-serif;
+    font-size: 1.5rem;
+}
+
+.traco{
+    margin: 10px;
+    height: 0px;
+    background: var(--laranja);
+    width: 80px;
+    border: 3px solid var(--laranja);
+    border-radius: 10px;   
+}
+
+.img-produtos{
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.img-prod-1{
+    position: absolute;
+    left: 50px;
+    height: 160px;
+    width: 160px;
+    border-radius: 200px;
+    border: 1px solid var(--preto);
+    z-index: 1;
+}
+
+.img-prod-2{
+    left: 380px;
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 200px;
+    border: 1px solid var(--preto);
+    z-index: 1;
+}
+
+.img-prod-3{
+    left: 700px;
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 200px;
+    border: 1px solid var(--preto);
+}
+
+.img-prod-4{
+    left: 1000px;
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 200px;
+    border: 1px solid var(--preto);
+}
+
+.faixa{
+    margin: 30px 0 0 40px ;
+    position:absolute;
+    height: 60px;
+    width: 95%;
+    background: var(--verde);
+    border: 10px solid var(--verdw);
+    border-radius: 20px;
+    z-index: 0;
+}
+
+@media(max-width:991px) {
+
+    .text-titulo-main{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        color: var(--braco);
+        font-family: 'Cormorant', sans-serif;
+        font-size: .8rem;
+        margin: 0 5px 0 5px;
+    }
+
+    .text-titulo-main.text-joias{
+        margin: 0 0 0 10px;
+    }
+    
+    .traco{
+        margin: 0;
+        height: 20px;
+        background: var(--laranja);
+        width: 0;
+        border: 3px solid var(--laranja);
+        border-radius: 10px;     
+    }
+
+    .img-produtos{
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        width: 100%;
+    }
+    
+    .img-prod-1, .img-prod-2, .img-prod-3, .img-prod-4{
+        position: relative;
+        height: 60px;
+        width: 60px;
+        border-radius: 200px;
+        border: 1px solid var(--preto);
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+    
+    .faixa{
+        margin: 0;
+        height: 30px;
+        width: 95%;
+        background: var(--verde);
+        border: 10px solid var(--verdw);
+        border-radius: 20px;
+    }
+    
+}
+
+/* Terminando imagem*/
+/* cards */
+
+.cards{
+    background: var(--braco);
+    height: 450px;
+}
+
+.cards-vendidos{
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    height: 350px;
+    width: 100%;
+    background: var(--braco);
+}
+
+.cards-vendidos .cards{
+    margin: 20px 0 0 15px;
+    height: 300px;
+    width: 360px;
+}
+
+.cards-vendidos .cards:first-child{
+    margin: 20px 0 0 50px;
+}
+
+.text-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-decoration: none;
+}
+
+.text-cards-conteudo{
+    text-decoration: none;
+    border: var(--braco);
+    background: var(--preto);
+    margin: 0 50px;
+    padding: 10px;
+    color: var(--braco);
+    font-family: 'amiri', sans-serif;
+}
+
+.text-cards-conteudo:hover{
+    color: var(--laranja);
+}
+
+.cards .traco{
+    margin: 10px 0 0 1060px;
+    width: 80px;
+}
+
+.img-carrossel{
+    height: 500px;
+    width: 500px;
+}
+
+.destaque{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--braco);
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+.carrossel .traco:first-child{
+    margin: 10px 10px 0 0;
+    width: 80px;
+}
+
+.carrossel .traco:last-child{
+    margin: 30px 0 0 10px;
+    width: 80px;
+    border: 3px solid var(--verde);
+    background-color: var(--verde);
+}
+
+@media (max-width: 991px){
+    .cards{
+        background: var(--braco);
+        height: 225px;
+    }
+
+    .cards-vendidos{
+        margin-top: 40px;
+        display: flex;
+        align-items: flex-start;
+        height: 150px;
+        width: 100%;
+        background: var(--braco);
+    }
+    
+    .cards-vendidos .cards{
+        margin: 20px 0 0 15px;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .cards-vendidos .cards:first-child{
+        margin: 20px 0 0 15px;
+    }
+    
+    .text-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        text-decoration: none;
+    }
+    
+    .text-cards-conteudo{
+        text-decoration: none;
+        border: var(--braco);
+        background: var(--preto);
+        margin: 0 50px;
+        padding: 8px;
+        color: var(--braco);
+        font-family: 'amiri', sans-serif;
+    }
+    
+    .text-cards-conteudo:hover{
+        color: var(--laranja);
+    }
+    
+    .cards .traco{
+        margin: 10px 0 0 245px;
+        width: 82px;
+        height: 5px;
+    }
+    
+    .img-carrossel{
+        height: 500px;
+        width: 500px;
+    }
+    
+    .destaque{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        color: var(--braco);
+        font-family: 'Cormorant Garamond', sans-serif;
+    }
+    
+    .carrossel .traco:first-child{
+        margin: 10px 10px 0 0;
+        width: 80px;
+        height: 10px;
+    }
+    
+    .carrossel .traco:last-child{
+        margin: 30px 0 0 10px;
+        width: 80px;
+        background-color: var(--verde);
+        height: 10px;
+    }
+}
+
+
+
+
+
+
