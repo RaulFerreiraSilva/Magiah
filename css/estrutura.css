@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Cormorant+Garamond:wght@300&family=Cormorant:wght@300&family=Great+Vibes&family=Inter:wght@200&family=Quicksand:wght@300&family=Rubik:wght@900&display=swap');
+
 :root {
     --verde: #2d4233;
     --laranja: #c36c4f;
     --preto: #2f2e2e;
-    --braco: #ebe6e6;
+    --branco: #ebe6e6;
 }
 
 * {
@@ -69,7 +70,7 @@ nav{
 }
 
 .navbar-magiah a {
-    color: var(--braco);
+    color: var(--branco);
 }
 
 .logo-magiah {
@@ -77,7 +78,7 @@ nav{
 }
 
 .logo-magiah a {
-    color: var(--braco);
+    color: var(--branco);
     font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
     text-decoration: none;
@@ -137,7 +138,7 @@ nav{
     position: absolute;
     left: 80px;
     bottom: 30vh;
-    color: var(--braco);
+    color: var(--branco);
 }
 
 .legenda h2{
@@ -155,7 +156,7 @@ nav{
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
-    color: var(--braco);
+    color: var(--branco);
     margin: 0 50px 0 0;  
 }
 
@@ -213,7 +214,7 @@ nav{
         position: absolute;
         left: 50px;
         bottom: 30vh;
-        color: var(--braco);
+        color: var(--branco);
     }
     
     .legenda h2{
@@ -231,9 +232,21 @@ nav{
         border-radius: 10px;
         padding: 10px;
         text-decoration: none;
-        color: var(--braco);
+        color: var(--branco);
         margin: 0 25px 0 0;  
         font-size: .75rem;   
+    } 
+}
+
+@media(max-width: 380px){
+    .legenda a{
+        background-color: var(--verde);
+        border-radius: 10px;
+        padding: 10px;
+        text-decoration: none;
+        color: var(--branco);
+        margin: 0 15px 0 0;  
+        font-size: .70rem;   
     } 
 }
 
@@ -248,7 +261,7 @@ nav{
 }
 
 .text-titulo-main{
-    color: var(--braco);
+    color: var(--branco);
     font-family: 'Cormorant', sans-serif;
     font-size: 1.5rem;
 }
@@ -323,7 +336,7 @@ nav{
         width: 200px;
         display: flex;
         justify-content: center;
-        color: var(--braco);
+        color: var(--branco);
         font-family: 'Cormorant', sans-serif;
         font-size: .8rem;
         margin: 0 5px 0 5px;
@@ -375,7 +388,7 @@ nav{
 /* cards */
 
 .cards{
-    background: var(--braco);
+    background: var(--branco);
     height: 450px;
 }
 
@@ -385,7 +398,7 @@ nav{
     align-items: flex-start;
     height: 350px;
     width: 100%;
-    background: var(--braco);
+    background: var(--branco);
 }
 
 .cards-vendidos .cards{
@@ -407,11 +420,11 @@ nav{
 
 .text-cards-conteudo{
     text-decoration: none;
-    border: var(--braco);
+    border: var(--branco);
     background: var(--preto);
     margin: 0 50px;
     padding: 10px;
-    color: var(--braco);
+    color: var(--branco);
     font-family: 'amiri', sans-serif;
 }
 
@@ -433,7 +446,7 @@ nav{
     margin: 20px;
     display: flex;
     justify-content: center;
-    color: var(--braco);
+    color: var(--branco);
     font-family: 'Cormorant Garamond', sans-serif;
 }
 
@@ -451,7 +464,7 @@ nav{
 
 @media (max-width: 991px){
     .cards{
-        background: var(--braco);
+        background: var(--branco);
         height: 225px;
     }
 
@@ -461,7 +474,7 @@ nav{
         align-items: flex-start;
         height: 150px;
         width: 100%;
-        background: var(--braco);
+        background: var(--branco);
     }
     
     .cards-vendidos .cards{
@@ -483,11 +496,11 @@ nav{
     
     .text-cards-conteudo{
         text-decoration: none;
-        border: var(--braco);
+        border: var(--branco);
         background: var(--preto);
         margin: 0 50px;
         padding: 8px;
-        color: var(--braco);
+        color: var(--branco);
         font-family: 'amiri', sans-serif;
     }
     
@@ -510,7 +523,7 @@ nav{
         margin: 20px;
         display: flex;
         justify-content: center;
-        color: var(--braco);
+        color: var(--branco);
         font-family: 'Cormorant Garamond', sans-serif;
     }
     
