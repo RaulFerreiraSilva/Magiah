@@ -35,11 +35,13 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width:768px){
     .sumir {
         display: none;
     }
+}
 
+@media (max-width: 600px) {
     .logos-top {
         height: 1em;
         width: 1em;
@@ -240,11 +242,6 @@ nav{
 
 @media(max-width: 380px){
     .legenda a{
-        background-color: var(--verde);
-        border-radius: 10px;
-        padding: 10px;
-        text-decoration: none;
-        color: var(--branco);
         margin: 0 15px 0 0;  
         font-size: .70rem;   
     } 
@@ -331,14 +328,13 @@ nav{
 }
 
 @media(max-width:991px) {
-
     .text-titulo-main{
         width: 200px;
         display: flex;
         justify-content: center;
         color: var(--branco);
         font-family: 'Cormorant', sans-serif;
-        font-size: .8rem;
+        font-size: 1rem;
         margin: 0 5px 0 5px;
     }
 
@@ -346,6 +342,26 @@ nav{
         margin: 0 0 0 10px;
     }
     
+    .img-prod-1, .img-prod-2, .img-prod-3, .img-prod-4{
+        position: relative;
+        height: 120px;
+        width: 120px;
+        border-radius: 200px;
+        border: 1px solid var(--preto);
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+    
+    .faixa{
+        margin: 20px 0 0 0;
+        height: 40px;
+        width: 95%;
+        background: var(--verde);
+        border: 10px solid var(--verdw);
+        border-radius: 20px;
+    }
+
     .traco{
         margin: 0;
         height: 20px;
@@ -360,28 +376,63 @@ nav{
         justify-content: space-around;
         height: 50px;
         width: 100%;
+        margin: 0 0 100px 0;
     }
     
+    
+}
+
+@media (max-width:760px){
     .img-prod-1, .img-prod-2, .img-prod-3, .img-prod-4{
         position: relative;
-        height: 60px;
-        width: 60px;
+        height: 90px;
+        width: 90px;
         border-radius: 200px;
         border: 1px solid var(--preto);
         margin: 0;
         padding: 0;
         left: 0;
     }
+    .img-produtos{
+        margin: 0 0 70px 0;
+    }
+}
+
+@media(max-width:500px){
+    .text-titulo-main{
+        font-size: .9rem;
+    }
+
+    .traco{
+        margin: 10px 0 0 0;
+        height: 10px;
+        border: 2px solid var(--laranja);
+        border-radius: 10px;     
+    }
+
+    .img-prod-1, .img-prod-2, .img-prod-3, .img-prod-4{
+        position: relative;
+        height: 70px;
+        width: 70px;
+        border-radius: 200px;
+        border: 1px solid var(--preto);
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+
+    .img-produtos{
+        margin: 0;
+    }
     
     .faixa{
-        margin: 0;
+        margin: 12px 0 0 0;
         height: 30px;
         width: 95%;
         background: var(--verde);
         border: 10px solid var(--verdw);
         border-radius: 20px;
     }
-    
 }
 
 /* Terminando imagem*/
@@ -539,6 +590,158 @@ nav{
         background-color: var(--verde);
         height: 10px;
     }
+}
+
+@media (max-width:760px){
+    .cards{
+        background: var(--branco);
+        height: 225px;
+    }
+
+    .cards-vendidos{
+        margin-top: 40px;
+        display: flex;
+        align-items: flex-start;
+        height: 150px;
+        width: 100%;
+        background: var(--branco);
+    }
+    
+    .cards-vendidos .cards{
+        margin: 20px 0 0 15px;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .cards-vendidos .cards:first-child{
+        margin: 20px 0 0 15px;
+    }
+    
+    .text-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        text-decoration: none;
+    }
+    
+    .text-cards-conteudo{
+        text-decoration: none;
+        border: var(--branco);
+        background: var(--preto);
+        margin: 0 50px;
+        padding: 8px;
+        color: var(--branco);
+        font-family: 'amiri', sans-serif;
+    }
+    
+    .text-cards-conteudo:hover{
+        color: var(--laranja);
+    }
+    
+    .cards .traco{
+        margin: 10px 0 0 245px;
+        width: 82px;
+        height: 5px;
+    }
+    
+    .img-carrossel{
+        height: 500px;
+        width: 500px;
+    }
+    
+    .destaque{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        color: var(--branco);
+        font-family: 'Cormorant Garamond', sans-serif;
+    }
+    
+    .carrossel .traco:first-child{
+        margin: 10px 10px 0 0;
+        width: 80px;
+        height: 10px;
+    }
+    
+    .carrossel .traco:last-child{
+        margin: 30px 0 0 10px;
+        width: 80px;
+        background-color: var(--verde);
+        height: 10px;
+}
+
+@media(max-width:400px){
+    .cards-vendidos{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        height: 150px;
+        width: 100%;
+        background: var(--branco);
+    }
+    
+    .cards-vendidos .cards{
+        margin: 20px 0 0 15px;
+        height: 92px;
+        width: 92px;
+    }
+    
+    .cards-vendidos .cards:first-child{
+        margin: 20px 0 0 0;
+    }
+    
+    .text-cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: end;
+        text-decoration: none;
+    }
+    
+    .text-cards-conteudo{
+        border: var(--branco);
+        background: var(--preto);
+        width: 70px;
+        margin: 0 0 0 250px;
+        padding: 8px;
+        color: var(--branco);
+        font-size: .8rem;
+        font-family: 'amiri', sans-serif;
+    }
+    
+    .text-cards-conteudo:hover{
+        color: var(--laranja);
+    }
+    
+    .cards .traco{
+        width: 82px;
+        height: 5px;
+    }
+    
+    .img-carrossel{
+        height: 500px;
+        width: 500px;
+    }
+    
+    .destaque{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        color: var(--branco);
+        font-family: 'Cormorant Garamond', sans-serif;
+    }
+    
+    .carrossel .traco:first-child{
+        margin: 10px 10px 0 0;
+        width: 80px;
+        height: 10px;
+    }
+    
+    .carrossel .traco:last-child{
+        margin: 30px 0 0 10px;
+        width: 80px;
+        background-color: var(--verde);
+        height: 10px;
 }
 
 
